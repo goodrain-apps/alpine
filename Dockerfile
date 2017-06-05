@@ -12,4 +12,7 @@ RUN apk add --no-cache tzdata libc6-compat tar sed wget curl bash su-exec && \
        echo "Asia/Shanghai" >  /etc/timezone && \
        date && apk del --no-cache tzdata
 
+
+RUN apk add --no-cache alpine-sdk
+
 CMD ["bash"]
