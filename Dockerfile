@@ -12,4 +12,6 @@ RUN apk add --no-cache tzdata libc6-compat tar sed wget curl bash su-exec && \
        echo "Asia/Shanghai" >  /etc/timezone && \
        date && apk del --no-cache tzdata
 
+ENV LANG en_US.utf8
+
 CMD ["bash"]
