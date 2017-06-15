@@ -2,7 +2,7 @@ FROM alpine:3.6
 MAINTAINER zhouyq@goodrain.com
 
 # china repositories mirror
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
 # modify timezone and install the necessary software
 RUN apk add --no-cache tzdata libc6-compat tar sed wget curl bash su-exec netcat-openbsd && \
